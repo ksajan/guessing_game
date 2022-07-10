@@ -11,17 +11,6 @@ fn main() {
         .read_line(&mut name)
         .expect("Failed to read line");
     println!("Hello {}", name.trim());
-    println!("The secret number is: {}", secret_number);
-    println!("");
-    // match guess.trim().parse::<i32>() {
-    //     Ok(guess) => {
-    //         if guess == secret_number {
-    //             println!("You guessed correctly!");
-    //         } else {
-    //             println!("You guessed incorrectly!");
-    //         }
-    //     }
-    // Err(_) => println!("Please enter a number!"),
     loop {
         println!("{} please enter your guess:", name);
         let mut guess = String::new();
